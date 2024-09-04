@@ -3,9 +3,6 @@ echo "===================================="
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb > /dev/null 2>&1
 sudo apt install --chrome-remote-desktop_current_amd64.deb > /dev/null 2>&1
 sudo apt install --assume-yes --fix-broken > /dev/null 2>&1
-echo "Install Firefox"
-echo "===================================="
-sudo apt install firefox -y > /dev/null 2>&1
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
