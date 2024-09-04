@@ -15,6 +15,8 @@ sudo apt install --assume-yes xfce4 desktop-base xfce4-terminal > /dev/null 2>&1
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session' /dev/null 2>&1
 sudo apt install --assume-yes xfce4 desktop-base dbus-x11 xscreensaver > /dev/null 2>&1
 sudo apt-remove --assume-yes gnome-terminal > /dev/null 2>&1
+sudo apt install --assume-yes xscreensaver > /dev/null 2>&1
+sudo systemctl disable lightdm.service > /dev/null 2>&1
 echo "===================================="
 echo "Start RDP"
 echo "===================================="
