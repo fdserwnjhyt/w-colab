@@ -1,7 +1,6 @@
 sudo apt-get update > /dev/null 2>&1
 echo "===================================="
-curl -L -o google-chrome-stable_current_amd64.deb \
-https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb > /dev/null 2>&1
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb > /dev/null 2>&1
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb > /dev/null 2>&1
 echo "Install Firefox"
 echo "===================================="
