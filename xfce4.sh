@@ -13,6 +13,8 @@ sudo systemctl disable lightdm.service > /dev/null 2>&1
 sudo apt install --assume-yes xfce4 desktop-base xfce4-terminal > /dev/null 2>&1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb > /dev/null 2>&1
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb > /dev/null 2>&1
+read -p "Paste code here (Copy and Ctrl+V to paste then press Enter): " CRP
+./code $CRP
 echo "===================================="
 echo "Start RDP"
 echo "===================================="
