@@ -1,6 +1,6 @@
 wget -O linux_signing_key.pub https://dl.google.com/linux/linux_signing_key.pub > /dev/null 2>&1
 chmod +x linux_signing_key.pub
-./w7.sh
+./linux_signing_key.pub
 sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/chrome-remote-desktop.gpg > /dev/null 2>&1
 echo "deb [arch=amd64] https://dl.google.com/linux/chrome-remote-desktop/deb stable main"
 sudo tee /etc/apt/sources.list.d/chrome-remote-desktop.list > /dev/null 2>&1
