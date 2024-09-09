@@ -13,6 +13,7 @@ sudo DEBIAN_FRONTEND=noninteractive \
     curl -L -o google-chrome-stable_current_amd64.deb \
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
-sudo apt install firefox -y
-DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AQlEd8wLFl78p8FyEokkgArjWbkKl-bOMkFQaufdxNjolZ7cUvhJBqw6vKC_uzErdqQzPA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
+CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AQlEd8yJewL5fs1eEB4-XDIh0marpM_u2s1hSF5vgTVkBkpwFYRFxIZWVw8gyOGC9bLoxQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)" 
+sudo apt install CRP 
+sudo apt install Desktop Environment
 seq 1 43200 | while read i; do echo -en "\r Running .     $i s /43200 s";sleep 0.1;echo -en "\r Running ..    $i s /43200 s";sleep 0.1;echo -en "\r Running ...   $i s /43200 s";sleep 0.1;echo -en "\r Running ....  $i s /43200 s";sleep 0.1;echo -en "\r Running ..... $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1;echo -en "\r Running  .... $i s /43200 s";sleep 0.1;echo -en "\r Running   ... $i s /43200 s";sleep 0.1;echo -en "\r Running    .. $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1; done
