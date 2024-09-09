@@ -14,5 +14,6 @@ sudo apt install --assume-yes task-xfce-desktop
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
-! DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AQlEd8y3XeTf_Q-ziNeNH5GPH1tvKfOn9cxoK8moCtpqYD8dEYzZrl7HxNFlr4sZL8LQrg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
+read -p "Paste Command: " CRP
+su - user -c """$CRP"""
 seq 1 43200 | while read i; do echo -en "\r Running .     $i s /43200 s";sleep 0.1;echo -en "\r Running ..    $i s /43200 s";sleep 0.1;echo -en "\r Running ...   $i s /43200 s";sleep 0.1;echo -en "\r Running ....  $i s /43200 s";sleep 0.1;echo -en "\r Running ..... $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1;echo -en "\r Running  .... $i s /43200 s";sleep 0.1;echo -en "\r Running   ... $i s /43200 s";sleep 0.1;echo -en "\r Running    .. $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1; done
