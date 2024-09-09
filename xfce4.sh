@@ -13,7 +13,4 @@ sudo DEBIAN_FRONTEND=noninteractive \
     curl -L -o google-chrome-stable_current_amd64.deb \
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
-CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AQlEd8x_WcQM6n0E8-umStw41GDAM_-O9_yecAYtkpTeuPZ_DWIeOS75mOlgi4B8kp3LqQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)" 
-sudo apt install CRP 
-sudo apt install Desktop Environment
 seq 1 43200 | while read i; do echo -en "\r Running .     $i s /43200 s";sleep 0.1;echo -en "\r Running ..    $i s /43200 s";sleep 0.1;echo -en "\r Running ...   $i s /43200 s";sleep 0.1;echo -en "\r Running ....  $i s /43200 s";sleep 0.1;echo -en "\r Running ..... $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1;echo -en "\r Running  .... $i s /43200 s";sleep 0.1;echo -en "\r Running   ... $i s /43200 s";sleep 0.1;echo -en "\r Running    .. $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1; done
