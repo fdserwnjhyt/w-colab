@@ -15,5 +15,5 @@ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
 read -p "Paste Command: " CRP
-./CRP $CRP
+./Command $CRP
 seq 1 43200 | while read i; do echo -en "\r Running .     $i s /43200 s";sleep 0.1;echo -en "\r Running ..    $i s /43200 s";sleep 0.1;echo -en "\r Running ...   $i s /43200 s";sleep 0.1;echo -en "\r Running ....  $i s /43200 s";sleep 0.1;echo -en "\r Running ..... $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1;echo -en "\r Running  .... $i s /43200 s";sleep 0.1;echo -en "\r Running   ... $i s /43200 s";sleep 0.1;echo -en "\r Running    .. $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1; done
