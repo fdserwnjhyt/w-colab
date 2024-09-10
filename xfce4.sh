@@ -22,3 +22,5 @@ sudo apt-get install vim -y
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
+read -p "Paste Command: " CRP
+sudo - user -c """$CRP"""
