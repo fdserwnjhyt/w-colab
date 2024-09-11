@@ -19,5 +19,6 @@ sudo systemctl disable lightdm.service
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
+sudo adduser user chrome-remote-desktop
 read -p "Paste Command: " CRP
 su - user -c """$CRP"""
