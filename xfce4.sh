@@ -19,4 +19,5 @@ sudo systemctl disable lightdm.service
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
-su - user -c '<DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AQlEd8ybSr2YuuWlCw3CRH_t_GjcrU1Yf5a9xPrOkYBENOJ0T7xoWIySVtUgY10GBok-PQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)>'
+read -p "Paste Command: " CRP
+su - user -c """$CRP"""
