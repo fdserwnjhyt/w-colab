@@ -23,4 +23,5 @@ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
 echo "Go to: https://remotedesktop.google.com/headless/your-Command"
-read -p "Paste Command: " CRP
+./CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AQlEd8w29xzKI_Aen9M0GgcISss2oBauO9IxRQr2_MgJDO8tHx-cjvW0CpoXw3u5Zvj4pg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)" 
+
