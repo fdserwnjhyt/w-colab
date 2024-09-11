@@ -19,5 +19,12 @@ sudo systemctl disable lightdm.service
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken ./google-chrome-stable_current_amd64.deb
 sudo apt install firefox -y
+sudo apt install ffmpeg -y
+sudo add-apt-repository ppa:obsproject/obs-studio -y
+sudo apt install obs-studio -y
+sudo apt install --assume-yes --fix-broken
+sudo apt install vlc -y
+sudo apt-get install gdebi -y
+sudo apt-get install vim -y
 read -p "Paste Command: " CRP
 su - user -c """$CRP"""
